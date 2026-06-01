@@ -1,0 +1,25 @@
+name: Draw ZMK keymaps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/*.keymap"
+      - "config/*.json"
+      - "config/boards/shields/LiNEA40/*.dtsi"
+      - "config/boards/shields/LiNEA40/*.overlay"
+      - "config/boards/shields/LiNEA40/*.keymap"
+      - "keymap_drawer.config.yaml"
+      - ".github/workflows/draw-keymaps.yml"
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
+    with:
+      keymap_patterns: "config/LiNEA40.keymap"
+      json_path: "config"
+      output_folder: "keymap-drawer"
+      draw_args: "LiNEA40:'-j config/LiNEA40.json -l LiNEA40'"
+      fail_on_error: true
