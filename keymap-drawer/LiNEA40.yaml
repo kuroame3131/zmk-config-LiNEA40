@@ -35,7 +35,7 @@ layers:
   - {t: LANG2, h: LEFT SHIFT}
   - {t: LANGUAGE 1, h: LEFT WIN}
   - {t: ▽, type: trans}
-  - {t: LEFT ALT, h: '4'}
+  - {t: TAB, h: '4'}
   - {t: SPACE, h: '2'}
   - {t: BACKSPACE, h: '2'}
   - {t: ENTER, h: '3'}
