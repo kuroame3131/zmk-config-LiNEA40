@@ -297,21 +297,11 @@ layers:
 combos:
 - p: [11, 12]
   k: '`'
-- p: [8, 9]
-  k: DEL
 - p: [6, 7]
   k: INS
 - p: [19, 17]
   k: '&mkp MB3'
 - p: [18, 19]
   k: '&mkp MB2'
-- p: [26, 27]
-  k: '&mkp MB4'
-- p: [27, 28]
-  k: '&mkp MB5'
-- p: [0, 1]
-  k: ESC
-- p: [10, 11]
-  k: TAB
 - p: [17, 18]
   k: '4'
