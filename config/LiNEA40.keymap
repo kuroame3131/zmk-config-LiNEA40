@@ -56,7 +56,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -72,7 +72,7 @@
 
         DeleteKey {
             bindings = <&kp DEL>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
         };
 
         InsertKey {
@@ -82,17 +82,17 @@
 
         CenterClick {
             bindings = <&mkp MB3>;
-            key-positions = <17 16>;
+            key-positions = <19 17>;
         };
 
         RightClick {
             bindings = <&mkp MB2>;
-            key-positions = <18 17>;
+            key-positions = <18 19>;
         };
 
         PrevClick {
             bindings = <&mkp MB4>;
-            key-positions = <27 26>;
+            key-positions = <26 27>;
         };
 
         ClickNext {
@@ -108,6 +108,11 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
+        };
+
+        scroll_change {
+            bindings = <&mo 5>;
+            key-positions = <17 18>;
         };
     };
 
@@ -132,77 +137,77 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W                 &kp E                    &kp R   &kp T                                      &kp Y        &kp U  &kp I                &kp O                    &kp P
-&kp A          &kp S                 &kp D                    &kp F   &kp G                                      &kp H        &kp J  &kp K                &kp L                    &kp MINUS
-&kp Z          &kp X                 &kp C                    &kp V   &kp B                                      &kp N        &kp M  &kp COMMA            &kp DOT                  &mt RIGHT_SHIFT BACKSPACE
-&mt LCTRL ESC  &mt LEFT_SHIFT LANG2  &mt LEFT_WIN LANGUAGE_1  &trans  &lt 4 TAB  &lt 2 SPACE    &lt 2 BACKSPACE  &lt 3 ENTER         &lt 5 RIGHT_BRACKET  &mt RIGHT_ALT BACKSLASH  &mt RIGHT_SHIFT SLASH
+&kp Q             &kp W         &kp E           &kp R  &kp T                                      &kp Y        &kp U  &kp I        &kp O                    &kp P
+&kp A             &kp S         &kp D           &kp F  &kp G                                      &kp H        &kp J  &kp K        &kp L                    &mkp MB1
+&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V  &kp B                                      &kp N        &kp M  &kp COMMA    &kp DOT                  &mt RIGHT_SHIFT MINUS
+&mt LCTRL ESC     &kp LEFT_WIN  &mt LALT LANG2  &none  &lt 1 SPACE  &lt 2 TAB    &lt 3 BACKSPACE  &lt 4 ENTER         &lt 5 LANG1  &mt RIGHT_ALT BACKSLASH  &mt RIGHT_CONTROL SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
-        //1
-
-        MOUSE {
+        SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB1  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans    &trans  &trans
-            >;
-        };
-
-        //2
-
-        MARK {
-            bindings = <
-&kp EXCLAMATION             &kp AT           &kp HASH         &kp DOLLAR     &kp PERCENT                      &kp CARET     &kp AMPERSAND  &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LBKT
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp SEMICOLON  &kp SEMICOLON                    &kp C_MUTE    &kp LS(LBKT)   &kp RIGHT_BRACKET      &kp BACKSLASH         &kp EQUAL
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp APOS       &kp SQT                          &kp KP_EQUAL  &kp INT3       &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)     &kp LS(INT1)
-&trans                      &trans           &trans           &trans         &trans         &trans    &trans  &trans                       &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LS(QUESTION)
+&kp EXCLAMATION             &kp AT           &kp HASH         &kp DOLLAR     &kp PERCENT                               &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RPAR
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp SEMICOLON  &kp SEMICOLON                             &kp MINUS  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp NON_US_BACKSLASH
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp APOS       &kp SQT                                   &trans     &trans         &kp SEMICOLON     &kp COLON             &kp LS(INT1)
+&trans                      &trans           &trans           &trans         &trans         &bootloader    &kp DELETE  &trans                    &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp LS(QUESTION)
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        //3
-        //4
-
-        FUNCTION {
+        NUMBER {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                          &trans      &trans  &kp LA(PRINTSCREEN)  &trans  &kp LC(LA(DELETE))
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                         &trans      &trans  &kp LS(LG(S))        &trans  &kp LC(LS(ESCAPE))
-&trans  &trans  &trans  &kp F11  &kp F12                         &kp C_MUTE  &trans  &trans               &trans  &kp LC(LA(INS))
-&trans  &trans  &trans  &trans   &trans   &trans    &bootloader  &trans              &trans               &trans  &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10                        &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH
+&kp F11  &kp F12  &trans  &trans  &trans                         &trans        &kp N7        &kp N8        &kp N9        &kp ENTER
+&trans   &trans   &trans  &trans  &trans   &trans    &kp PERIOD  &kp N0                      &trans        &trans        &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
-        //5
+        ACTION {
+            bindings = <
+&kp C_BRI_DN  &kp C_BRI_UP  &kp K_MUTE       &kp C_VOLUME_DOWN    &kp C_VOLUME_UP                    &kp LG(TAB)  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp LG(D)
+&trans        &trans        &kp LA(LG(S))    &kp LA(PRINTSCREEN)  &kp PRINTSCREEN                    &kp HOME     &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
+&trans        &trans        &kp LC(LA(DEL))  &kp LC(LS(ESCAPE))   &kp LC(LA(INS))                    &kp PAGE_UP  &mkp MB4                &mkp MB3        &mkp MB5                 &kp PAGE_DOWN
+&trans        &trans        &trans           &trans               &trans           &trans    &trans  &trans                               &trans          &kp C_BRI_DN             &kp C_BRI_UP
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+        };
+
+        SETTING {
+            bindings = <
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
+&trans        &trans        &trans        &trans        &trans                               &trans        &trans        &trans          &trans        &trans
+&trans        &trans        &trans        &trans        &trans                               &trans        &trans        &trans          &trans        &bt BT_CLR
+&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &trans                      &studio_unlock  &trans        &bt BT_CLR_ALL
+            >;
+
+            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+        };
 
         SCROLL {
             bindings = <
-&trans    &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT_ARROW)  &trans                                &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
-&trans    &kp LEFT_ARROW      &kp DOWN      &kp RIGHT_ARROW      &trans                                &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
-&kp HOME  &kp PAGE_DOWN       &kp END       &kp PAGE_UP          &trans                                &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&trans    &trans              &trans        &trans               &trans  &bootloader    &kp BACKSPACE  &kp NUMBER_0                   &kp NUMBER_0  &kp DOT       &kp QUESTION
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
-        //6
-
-        WIRELESS {
+        MOUSE {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &mkp MB1
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
     };
 };
