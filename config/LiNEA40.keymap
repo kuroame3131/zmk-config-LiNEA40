@@ -15,7 +15,6 @@
 #define SETTING 5
 #define SCROLL 6
 
-
 //mouse cursol
 
 &mmv {
@@ -71,7 +70,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -147,10 +146,10 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION             &kp AT           &kp HASH         &kp DOLLAR     &kp PERCENT                               &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RPAR
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp SEMICOLON  &kp SEMICOLON                             &kp MINUS  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp NON_US_BACKSLASH
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp APOS       &kp SQT                                   &trans     &trans         &kp SEMICOLON     &kp COLON             &kp LS(INT1)
-&trans                      &trans           &trans           &trans         &trans         &bootloader    &kp DELETE  &trans                    &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp LS(QUESTION)
+&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR     &kp PERCENT                               &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RPAR
+&kp SLASH        &trans  &trans    &kp SEMICOLON  &kp SEMICOLON                             &kp MINUS  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp NON_US_BACKSLASH
+&trans           &trans  &trans    &kp APOS       &kp SQT                                   &trans     &trans         &kp SEMICOLON     &kp COLON             &kp LS(INT1)
+&trans           &trans  &trans    &trans         &trans         &bootloader    &kp DELETE  &trans                    &kp SLASH         &kp NON_US_BACKSLASH  &kp LS(QUESTION)
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -158,9 +157,9 @@
 
         NUMBER {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp PLUS      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
 &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                        &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH
-&kp F11  &kp F12  &trans  &trans  &trans                         &trans        &kp N7        &kp N8        &kp N9        &kp ENTER
+&kp F11  &kp F12  &trans  &trans  &trans                         &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
 &trans   &trans   &trans  &trans  &trans   &trans    &kp PERIOD  &kp N0                      &trans        &trans        &trans
             >;
 
@@ -169,8 +168,8 @@
 
         ACTION {
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp K_MUTE       &kp C_VOLUME_DOWN    &kp C_VOLUME_UP                    &kp LG(TAB)  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp LG(D)
-&trans        &trans        &kp LA(LG(S))    &kp LA(PRINTSCREEN)  &kp PRINTSCREEN                    &kp HOME     &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE       &kp C_VOLUME_DOWN    &kp C_VOLUME_UP                    &kp LG(TAB)  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp LG(D)
+&trans        &trans        &kp LS(LG(S))    &kp LA(PRINTSCREEN)  &kp PRINTSCREEN                    &kp HOME     &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
 &trans        &trans        &kp LC(LA(DEL))  &kp LC(LS(ESCAPE))   &kp LC(LA(INS))                    &kp PAGE_UP  &mkp MB4                &mkp MB3        &mkp MB5                 &kp PAGE_DOWN
 &trans        &trans        &trans           &trans               &trans           &trans    &trans  &trans                               &trans          &kp C_BRI_DN             &kp C_BRI_UP
             >;
