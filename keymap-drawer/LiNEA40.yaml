@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: LiNEA40}
 layers:
-  default:
+  Base:
   - Q
   - W
   - E
@@ -35,14 +35,14 @@ layers:
   - LEFT WIN
   - {t: LANG2, h: LALT}
   - ''
-  - {t: SPACE, h: '2'}
-  - {t: TAB, h: '3'}
-  - {t: BACKSPACE, h: '4'}
-  - {t: ENTER, h: '5'}
+  - {t: SPACE, h: Symbol}
+  - {t: TAB, h: Number}
+  - {t: BACKSPACE, h: Action}
+  - {t: ENTER, h: Setting}
   - LANG1
   - {t: \, h: RIGHT ALT}
   - {t: /, h: RIGHT CONTROL}
-  '1':
+  Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '2':
+  Symbol:
   - Sft+1
   - Sft+2
   - Sft+3
@@ -126,7 +126,7 @@ layers:
   - Sft+-
   - Sft+INT3
   - '?'
-  '3':
+  Number:
   - F1
   - F2
   - F3
@@ -168,7 +168,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '4':
+  Action:
   - BRI DN
   - BRI UP
   - MUTE
@@ -210,7 +210,7 @@ layers:
   - {t: ▽, type: trans}
   - BRI DN
   - BRI UP
-  '5':
+  Setting:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -252,7 +252,7 @@ layers:
   - '&studio_unlock'
   - {t: ▽, type: trans}
   - BT CLR ALL
-  '6':
+  Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -304,4 +304,4 @@ combos:
 - p: [18, 19]
   k: '&mkp MB2'
 - p: [17, 18]
-  k: '6'
+  k: Scroll
