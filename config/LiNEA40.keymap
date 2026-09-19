@@ -70,9 +70,9 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,
+            //スクロール方向を逆転,,,,,
             <&zip_xy_scaler 1 16>,
-            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,,,,
+            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -168,10 +168,10 @@
 
         SYMBOL {
             bindings = <
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)         &kp LS(N4)   &kp LS(N5)                           &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)    &kp LBKT
-&kp SLASH   &kp INT1    &kp SEMI           &kp SQT      &kp LS(EQUAL)                        &kp MINUS   &kp LS(LBKT)  &kp RBKT       &kp BSLH      &kp EQUAL
-&trans      &trans      &kp LS(SEMICOLON)  &kp LS(SQT)  &trans                               &trans      &kp INT3      &kp LS(RBKT)   &kp LS(BSLH)  &kp LS(INT1)
-&trans      &trans      &trans             &none        &trans         &trans    &kp DELETE  &trans                    &kp LS(MINUS)  &kp LS(INT3)  &kp QUESTION
+&kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)   &kp LS(N5)                           &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)    &kp LBKT
+&kp SLASH   &kp INT1    &kp SEMI      &kp SQT      &kp LS(EQUAL)                        &kp MINUS   &kp LS(LBKT)  &kp RBKT       &kp BSLH      &kp EQUAL
+&trans      &trans      &kp LS(SEMI)  &kp LS(SQT)  &trans                               &trans      &kp INT3      &kp LS(RBKT)   &kp LS(BSLH)  &kp LS(INT1)
+&trans      &trans      &trans        &none        &trans         &trans    &kp DELETE  &trans                    &kp LS(MINUS)  &kp LS(INT3)  &kp QUESTION
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
