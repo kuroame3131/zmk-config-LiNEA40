@@ -20,8 +20,8 @@ layers:
   - J
   - K
   - L
-  - '&mkp MB1'
-  - {t: Z, h: LEFT SHIFT}
+  - 左click
+  - {t: Z, h: Shift}
   - X
   - C
   - V
@@ -30,18 +30,18 @@ layers:
   - M
   - ','
   - .
-  - {t: '-', h: RIGHT SHIFT}
-  - {t: ESC, h: LCTRL}
-  - LEFT WIN
-  - {t: LANG2, h: LALT}
+  - {t: '-', h: Shift}
+  - {t: ESC, h: Ctrl}
+  - Win
+  - {t: 英数, h: Alt}
   - ''
   - {t: SPACE, h: Symbol}
   - {t: TAB, h: Number}
-  - {t: BACKSPACE, h: Action}
+  - {t: BS, h: Action}
   - {t: ENTER, h: Setting}
-  - LANG1
-  - {t: \, h: RIGHT ALT}
-  - {t: /, h: RIGHT CONTROL}
+  - かな
+  - {t: ']', h: Alt}
+  - {t: /, h: Ctrl}
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -62,7 +62,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
+  - 左click
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -85,46 +85,46 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Symbol:
-  - Sft+1
-  - Sft+2
-  - Sft+3
-  - Sft+4
-  - Sft+5
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - Sft+9
-  - '['
+  - '!'
+  - '"'
+  - '#'
+  - $
+  - '%'
+  - '&'
+  - ''''
+  - (
+  - )
+  - '@'
   - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ;
-  - Sft+;
+  - +
   - '-'
-  - Sft+[
+  - '`'
+  - '['
   - ']'
+  - ^
+  - {t: ▽, type: trans}
   - \
-  - '='
+  - '~'
+  - ':'
+  - '*'
   - {t: ▽, type: trans}
-  - INT1
-  - Sft+=
-  - ''''
-  - Sft+'
-  - {t: ▽, type: trans}
-  - INT3
-  - Sft+]
-  - Sft+\
-  - Sft+INT1
+  - ¥
+  - '{'
+  - '}'
+  - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - '&bootloader'
-  - DELETE
+  - BOOT
+  - Del
   - {t: ▽, type: trans}
-  - Sft+-
-  - Sft+INT3
+  - '='
+  - '|'
   - '?'
   Number:
   - F1
@@ -132,7 +132,7 @@ layers:
   - F3
   - F4
   - F5
-  - Sft+;
+  - +
   - '7'
   - '8'
   - '9'
@@ -142,7 +142,7 @@ layers:
   - F8
   - F9
   - F10
-  - Sft+'
+  - '*'
   - '4'
   - '5'
   - '6'
@@ -169,36 +169,36 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Action:
-  - BRI DN
-  - BRI UP
-  - MUTE
-  - VOLUME DOWN
-  - VOLUME UP
-  - Gui+TAB
-  - Ctl+Gui+LEFT ARROW
-  - UP ARROW
-  - Ctl+Gui+RIGHT ARROW
-  - Gui+D
+  - 輝度-
+  - 輝度+
+  - ミュート
+  - 音量-
+  - 音量+
+  - タスクビュー
+  - 仮想Desk←
+  - ↑
+  - 仮想Desk→
+  - デスクトップ
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+Gui+S
-  - Alt+PRINTSCREEN
-  - PRINTSCREEN
+  - 範囲SS
+  - 窓SS
+  - PrtSc
   - HOME
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - ←
+  - ↓
+  - →
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Alt+DEL
-  - Ctl+Sft+ESCAPE
-  - Ctl+Alt+INS
-  - PAGE UP
-  - '&mkp MB4'
-  - '&mkp MB3'
-  - '&mkp MB5'
-  - PAGE DOWN
+  - Ctl+Alt+Del
+  - タスクマネージャ
+  - Ctl+Alt+Ins
+  - PgUp
+  - 戻る
+  - 中click
+  - 進む
+  - PgDn
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,8 +208,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BRI DN
-  - BRI UP
+  - 輝度-
+  - 輝度+
   Setting:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -247,9 +247,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - BOOT
   - {type: held}
-  - '&studio_unlock'
+  - Studio
   - {t: ▽, type: trans}
   - BT CLR ALL
   Scroll:
@@ -270,8 +270,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -296,12 +296,12 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [11, 12]
-  k: '`'
+  k: 半角/全角
 - p: [6, 7]
   k: INS
 - p: [19, 17]
-  k: '&mkp MB3'
+  k: 中click
 - p: [18, 19]
-  k: '&mkp MB2'
+  k: 右click
 - p: [17, 18]
   k: Scroll
