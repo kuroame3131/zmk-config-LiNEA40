@@ -38,8 +38,8 @@ layers:
   - {t: SPACE, h: Symbol}
   - {t: TAB, h: Number}
   - {t: BS, h: Action}
-  - {t: ENTER, h: Setting}
-  - かな
+  - {t: ENTER, h: Symbol}
+  - {t: かな, h: Setting}
   - {t: ']', h: Alt}
   - {t: /, h: Ctrl}
   Mouse:
@@ -246,10 +246,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - BOOT
-  - {type: held}
+  - BOOT
   - Studio
+  - {t: Studio, type: held}
   - {t: ▽, type: trans}
   - BT CLR ALL
   Scroll:
@@ -295,9 +295,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [11, 12]
+- p: [1, 2]
   k: 半角/全角
-- p: [6, 7]
+- p: [7, 8]
   k: INS
 - p: [19, 17]
   k: 中click
@@ -305,3 +305,11 @@ combos:
   k: 右click
 - p: [17, 18]
   k: Scroll
+- p: [26, 27]
+  k: 戻る
+- p: [28, 27]
+  k: 進む
+- p: [11, 12]
+  k: 英数
+- p: [17, 18]
+  k: かな

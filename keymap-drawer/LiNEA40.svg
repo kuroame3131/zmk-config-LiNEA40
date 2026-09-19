@@ -298,13 +298,15 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(476, 196)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
-<a href="#Setting">
-<text x="0" y="24" class="key hold layer-activator">Setting</text>
+<a href="#Symbol">
+<text x="0" y="24" class="key hold layer-activator">Symbol</text>
 </a></g>
 <g transform="translate(588, 196)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">かな</text>
-</g>
+<a href="#Setting">
+<text x="0" y="24" class="key hold layer-activator">Setting</text>
+</a></g>
 <g transform="translate(644, 196)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">]</text>
@@ -316,12 +318,12 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="24" class="key hold">Ctrl</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">半角/全角</text>
+<rect rx="6" ry="6" x="98" y="15" width="28" height="26" class="combo"/>
+<text x="112" y="28" class="combo tap">半角/全角</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="546" y="15" width="28" height="26" class="combo"/>
-<text x="560" y="28" class="combo tap">INS</text>
+<rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
+<text x="616" y="28" class="combo tap">INS</text>
 </g>
 <g class="combo combopos-2">
 <path d="M644,84 l37,0" class="combo"/>
@@ -338,6 +340,22 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Scroll">
 <text x="616" y="84" class="combo tap layer-activator">Scroll</text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
+<text x="560" y="140" class="combo tap">戻る</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="602" y="127" width="28" height="26" class="combo"/>
+<text x="616" y="140" class="combo tap">進む</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
+<text x="112" y="84" class="combo tap">英数</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
+<text x="616" y="84" class="combo tap">かな</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-Mouse">
@@ -508,12 +526,12 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">半角/全角</text>
+<rect rx="6" ry="6" x="98" y="15" width="28" height="26" class="combo"/>
+<text x="112" y="28" class="combo tap">半角/全角</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="546" y="15" width="28" height="26" class="combo"/>
-<text x="560" y="28" class="combo tap">INS</text>
+<rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
+<text x="616" y="28" class="combo tap">INS</text>
 </g>
 <g class="combo combopos-2">
 <path d="M644,84 l37,0" class="combo"/>
@@ -530,6 +548,22 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Scroll">
 <text x="616" y="84" class="combo tap layer-activator">Scroll</text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
+<text x="560" y="140" class="combo tap">戻る</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="602" y="127" width="28" height="26" class="combo"/>
+<text x="616" y="140" class="combo tap">進む</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
+<text x="112" y="84" class="combo tap">英数</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
+<text x="616" y="84" class="combo tap">かな</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 560)" class="layer-Symbol">
@@ -699,12 +733,12 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">?</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">半角/全角</text>
+<rect rx="6" ry="6" x="98" y="15" width="28" height="26" class="combo"/>
+<text x="112" y="28" class="combo tap">半角/全角</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="546" y="15" width="28" height="26" class="combo"/>
-<text x="560" y="28" class="combo tap">INS</text>
+<rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
+<text x="616" y="28" class="combo tap">INS</text>
 </g>
 <g class="combo combopos-2">
 <path d="M644,84 l37,0" class="combo"/>
@@ -721,6 +755,22 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Scroll">
 <text x="616" y="84" class="combo tap layer-activator">Scroll</text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
+<text x="560" y="140" class="combo tap">戻る</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="602" y="127" width="28" height="26" class="combo"/>
+<text x="616" y="140" class="combo tap">進む</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
+<text x="112" y="84" class="combo tap">英数</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
+<text x="616" y="84" class="combo tap">かな</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 840)" class="layer-Number">
@@ -890,12 +940,12 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">半角/全角</text>
+<rect rx="6" ry="6" x="98" y="15" width="28" height="26" class="combo"/>
+<text x="112" y="28" class="combo tap">半角/全角</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="546" y="15" width="28" height="26" class="combo"/>
-<text x="560" y="28" class="combo tap">INS</text>
+<rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
+<text x="616" y="28" class="combo tap">INS</text>
 </g>
 <g class="combo combopos-2">
 <path d="M644,84 l37,0" class="combo"/>
@@ -912,6 +962,22 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Scroll">
 <text x="616" y="84" class="combo tap layer-activator">Scroll</text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
+<text x="560" y="140" class="combo tap">戻る</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="602" y="127" width="28" height="26" class="combo"/>
+<text x="616" y="140" class="combo tap">進む</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
+<text x="112" y="84" class="combo tap">英数</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
+<text x="616" y="84" class="combo tap">かな</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1120)" class="layer-Action">
@@ -1085,12 +1151,12 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">輝度+</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">半角/全角</text>
+<rect rx="6" ry="6" x="98" y="15" width="28" height="26" class="combo"/>
+<text x="112" y="28" class="combo tap">半角/全角</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="546" y="15" width="28" height="26" class="combo"/>
-<text x="560" y="28" class="combo tap">INS</text>
+<rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
+<text x="616" y="28" class="combo tap">INS</text>
 </g>
 <g class="combo combopos-2">
 <path d="M644,84 l37,0" class="combo"/>
@@ -1107,6 +1173,22 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Scroll">
 <text x="616" y="84" class="combo tap layer-activator">Scroll</text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
+<text x="560" y="140" class="combo tap">戻る</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="602" y="127" width="28" height="26" class="combo"/>
+<text x="616" y="140" class="combo tap">進む</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
+<text x="112" y="84" class="combo tap">英数</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
+<text x="616" y="84" class="combo tap">かな</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1400)" class="layer-Setting">
@@ -1264,20 +1346,21 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(308, 196)" class="key trans keypos-35">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(308, 196)" class="key keypos-35">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">BOOT</text>
 </g>
 <g transform="translate(420, 196)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">BOOT</text>
 </g>
-<g transform="translate(476, 196)" class="key held keypos-37">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-</g>
-<g transform="translate(588, 196)" class="key keypos-38">
+<g transform="translate(476, 196)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Studio</text>
+</g>
+<g transform="translate(588, 196)" class="key held keypos-38">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<text x="0" y="0" class="key held tap">Studio</text>
 </g>
 <g transform="translate(644, 196)" class="key trans keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1290,12 +1373,12 @@ path.combo { stroke: #7f7f7f; }
 </text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">半角/全角</text>
+<rect rx="6" ry="6" x="98" y="15" width="28" height="26" class="combo"/>
+<text x="112" y="28" class="combo tap">半角/全角</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="546" y="15" width="28" height="26" class="combo"/>
-<text x="560" y="28" class="combo tap">INS</text>
+<rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
+<text x="616" y="28" class="combo tap">INS</text>
 </g>
 <g class="combo combopos-2">
 <path d="M644,84 l37,0" class="combo"/>
@@ -1312,6 +1395,22 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Scroll">
 <text x="616" y="84" class="combo tap layer-activator">Scroll</text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
+<text x="560" y="140" class="combo tap">戻る</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="602" y="127" width="28" height="26" class="combo"/>
+<text x="616" y="140" class="combo tap">進む</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
+<text x="112" y="84" class="combo tap">英数</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
+<text x="616" y="84" class="combo tap">かな</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1680)" class="layer-Scroll">
@@ -1482,12 +1581,12 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">半角/全角</text>
+<rect rx="6" ry="6" x="98" y="15" width="28" height="26" class="combo"/>
+<text x="112" y="28" class="combo tap">半角/全角</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="546" y="15" width="28" height="26" class="combo"/>
-<text x="560" y="28" class="combo tap">INS</text>
+<rect rx="6" ry="6" x="602" y="15" width="28" height="26" class="combo"/>
+<text x="616" y="28" class="combo tap">INS</text>
 </g>
 <g class="combo combopos-2">
 <path d="M644,84 l37,0" class="combo"/>
@@ -1504,6 +1603,22 @@ path.combo { stroke: #7f7f7f; }
 <a href="#Scroll">
 <text x="616" y="84" class="combo tap layer-activator">Scroll</text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
+<text x="560" y="140" class="combo tap">戻る</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="602" y="127" width="28" height="26" class="combo"/>
+<text x="616" y="140" class="combo tap">進む</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
+<text x="112" y="84" class="combo tap">英数</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
+<text x="616" y="84" class="combo tap">かな</text>
+</g>
 </g>
 </g>
 </svg>
