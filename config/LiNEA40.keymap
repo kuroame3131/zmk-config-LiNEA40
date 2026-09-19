@@ -70,9 +70,9 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,
+            //スクロール方向を逆転,,
             <&zip_xy_scaler 1 16>,
-            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,
+            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -118,12 +118,12 @@
 
         hankaku {
             bindings = <&kp LANG2>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
         };
 
         zenkaku {
             bindings = <&kp LANG1>;
-            key-positions = <17 18>;
+            key-positions = <17 16>;
         };
     };
 
