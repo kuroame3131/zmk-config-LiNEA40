@@ -123,9 +123,9 @@ layers:
   - {t: ▽, type: trans}
   - Del
   - {t: ▽, type: trans}
-  - '='
-  - '|'
-  - '?'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Number:
   - F1
   - F2
@@ -319,4 +319,7 @@ combos:
   l: [Base]
 - p: [0, 1]
   k: ESC
+  l: [Base]
+- p: [28, 29]
+  k: Ctrl
   l: [Base]
