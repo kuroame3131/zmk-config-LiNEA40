@@ -70,9 +70,9 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,
+            //スクロール方向を逆転,,,,,,,
             <&zip_xy_scaler 1 16>,
-            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,,,,,,
+            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -84,6 +84,7 @@
         InsertKey {
             bindings = <&kp INS>;
             key-positions = <7 8>;
+            layers = <0>;
         };
 
         CenterClick {
@@ -99,31 +100,37 @@
         scroll_change {
             bindings = <&mo 6>;
             key-positions = <17 18>;
+            layers = <0>;
         };
 
         modoru {
             bindings = <&mkp MB4>;
             key-positions = <26 27>;
+            layers = <0>;
         };
 
         susumu {
             bindings = <&mkp MB5>;
             key-positions = <28 27>;
+            layers = <0>;
         };
 
-        hankaku {
+        eisuu {
             bindings = <&kp LANG2>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
-        zenkaku {
+        kana {
             bindings = <&kp LANG1>;
             key-positions = <17 16>;
+            layers = <0>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+            layers = <0>;
         };
     };
 
@@ -168,10 +175,10 @@
 
         SYMBOL {
             bindings = <
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)   &kp LS(N5)                           &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)    &kp LBKT
-&kp SLASH   &kp INT1    &kp SEMI      &kp SQT      &kp LS(EQUAL)                        &kp MINUS   &kp LS(LBKT)  &kp RBKT       &kp BSLH      &kp EQUAL
-&trans      &trans      &kp LS(SEMI)  &kp LS(SQT)  &trans                               &trans      &kp INT3      &kp LS(RBKT)   &kp LS(BSLH)  &kp LS(INT1)
-&trans      &trans      &trans        &none        &trans         &trans    &kp DELETE  &trans                    &kp LS(MINUS)  &kp LS(INT3)  &kp QUESTION
+&kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(N4)   &kp LS(N5)                           &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)    &kp LBKT
+&kp SLASH     &kp INT1      &kp SEMI      &kp SQT      &kp LS(EQUAL)                        &kp MINUS   &kp LS(LBKT)  &kp RBKT       &kp BSLH      &kp LS(MINUS)
+&kp QUESTION  &kp LS(INT3)  &kp LS(SEMI)  &kp LS(SQT)  &trans                               &kp EQUAL   &kp INT3      &kp LS(RBKT)   &kp LS(BSLH)  &kp LS(INT1)
+&trans        &trans        &trans        &none        &trans         &trans    &kp DELETE  &trans                    &kp LS(MINUS)  &kp LS(INT3)  &kp QUESTION
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -190,10 +197,10 @@
 
         ACTION {
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE       &kp C_VOLUME_DOWN    &kp C_VOLUME_UP                    &kp LG(TAB)  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp LG(D)
-&trans        &trans        &kp LS(LG(S))    &kp LA(PRINTSCREEN)  &kp PRINTSCREEN                    &kp HOME     &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
-&trans        &trans        &kp LC(LA(DEL))  &kp LC(LS(ESCAPE))   &kp LC(LA(INS))                    &kp PAGE_UP  &mkp MB4                &mkp MB3        &mkp MB5                 &kp PAGE_DOWN
-&trans        &trans        &trans           &none                &trans           &trans    &trans  &trans                               &trans          &kp C_BRI_DN             &kp C_BRI_UP
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE       &kp C_VOLUME_DOWN    &kp C_VOLUME_UP                    &kp LG(TAB)  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW        &kp LC(LG(RIGHT_ARROW))  &kp LG(D)
+&trans        &trans        &kp LS(LG(S))    &kp LA(PRINTSCREEN)  &kp PRINTSCREEN                    &kp HOME     &kp LEFT_ARROW          &kp DOWN_ARROW      &kp RIGHT_ARROW          &kp END
+&trans        &trans        &kp LC(LA(DEL))  &kp LC(LS(ESCAPE))   &kp LC(LA(INS))                    &kp PAGE_UP  &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)    &kp LG(RIGHT_ARROW)      &kp PAGE_DOWN
+&trans        &trans        &trans           &none                &trans           &trans    &trans  &trans                               &kp LG(DOWN_ARROW)  &trans                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
