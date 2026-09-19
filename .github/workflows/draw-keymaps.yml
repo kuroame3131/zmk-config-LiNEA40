@@ -21,5 +21,7 @@ jobs:
       keymap_patterns: "config/LiNEA40.keymap"
       json_path: "config"
       output_folder: "keymap-drawer"
+      # レイヤー見出しと &lt の長押しラベルを番号ではなく名前で出す
+      parse_args: "LiNEA40:'--layer-names Base Mouse Symbol Number Action Setting Scroll'"
       draw_args: "LiNEA40:'-j config/LiNEA40.json -l LiNEA40'"
       fail_on_error: true
