@@ -40,7 +40,7 @@ layers:
   - {t: BS, h: Action}
   - {t: ENTER, h: Symbol}
   - {t: かな, h: Setting}
-  - {t: ']', h: Alt}
+  - {t: _, h: Alt}
   - {t: /, h: Ctrl}
   Mouse:
   - {t: ▽, type: trans}
