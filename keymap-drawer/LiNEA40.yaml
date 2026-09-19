@@ -76,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -97,9 +97,9 @@ layers:
   - '@'
   - /
   - \
-  - '~'
   - ;
-  - +
+  - ':'
+  - '~'
   - '-'
   - '`'
   - '['
@@ -107,9 +107,9 @@ layers:
   - ^
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ':'
+  - Sft+;
   - '*'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ¥
   - '{'
@@ -118,9 +118,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
-  - BOOT
+  - {t: ▽, type: trans}
   - Del
   - {t: ▽, type: trans}
   - '='
@@ -159,8 +159,8 @@ layers:
   - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BOOT
+  - ''
   - {t: ▽, type: trans}
   - {type: held}
   - .
@@ -202,7 +202,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -244,12 +244,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - BOOT
   - BOOT
   - Studio
-  - {t: Studio, type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - BT CLR ALL
   Scroll:
@@ -286,7 +286,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -295,8 +295,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [1, 2]
-  k: 半角/全角
 - p: [7, 8]
   k: INS
 - p: [19, 17]
@@ -313,3 +311,5 @@ combos:
   k: 英数
 - p: [17, 16]
   k: かな
+- p: [0, 1]
+  k: ESC
