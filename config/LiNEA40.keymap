@@ -69,8 +69,10 @@
     scroller {
         layers = <SCROLL>;
         input-processors =
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, //スクロール方向を逆転
-            <&zip_xy_scaler 1 16>,                        //ボール移動量を1/16に減速（数字を大きくするほど遅い）
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            //スクロール方向を逆転,
+            <&zip_xy_scaler 1 16>,
+            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -81,12 +83,12 @@
 
         ZenkakuHankaku {
             bindings = <&kp GRAVE>;
-            key-positions = <11 12>;
+            key-positions = <1 2>;
         };
 
         InsertKey {
             bindings = <&kp INS>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
         };
 
         CenterClick {
@@ -101,6 +103,26 @@
 
         scroll_change {
             bindings = <&mo 6>;
+            key-positions = <17 18>;
+        };
+
+        modoru {
+            bindings = <&mkp MB4>;
+            key-positions = <26 27>;
+        };
+
+        susumu {
+            bindings = <&mkp MB5>;
+            key-positions = <28 27>;
+        };
+
+        hankaku {
+            bindings = <&kp LANG2>;
+            key-positions = <11 12>;
+        };
+
+        zenkaku {
+            bindings = <&kp LANG1>;
             key-positions = <17 18>;
         };
     };
@@ -126,10 +148,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E           &kp R  &kp T                                      &kp Y        &kp U  &kp I      &kp O                    &kp P
-&kp A             &kp S         &kp D           &kp F  &kp G                                      &kp H        &kp J  &kp K      &kp L                    &mkp MB1
-&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V  &kp B                                      &kp N        &kp M  &kp COMMA  &kp DOT                  &mt RIGHT_SHIFT MINUS
-&mt LCTRL ESC     &kp LEFT_WIN  &mt LALT LANG2  &none  &lt 2 SPACE  &lt 3 TAB    &lt 4 BACKSPACE  &lt 5 ENTER         &kp LANG1  &mt RIGHT_ALT BACKSLASH  &mt RIGHT_CONTROL SLASH
+&kp Q             &kp W         &kp E           &kp R  &kp T                                      &kp Y        &kp U  &kp I        &kp O                    &kp P
+&kp A             &kp S         &kp D           &kp F  &kp G                                      &kp H        &kp J  &kp K        &kp L                    &mkp MB1
+&mt LEFT_SHIFT Z  &kp X         &kp C           &kp V  &kp B                                      &kp N        &kp M  &kp COMMA    &kp DOT                  &mt RIGHT_SHIFT MINUS
+&mt LCTRL ESC     &kp LEFT_WIN  &mt LALT LANG2  &none  &lt 2 SPACE  &lt 3 TAB    &lt 4 BACKSPACE  &lt 2 ENTER         &lt 5 LANG1  &mt RIGHT_ALT BACKSLASH  &mt RIGHT_CONTROL SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -146,14 +168,10 @@
 
         SYMBOL {
             bindings = <
-//  !            "             #             $             %                      &             '             (             )             @
-&kp LS(N1)       &kp LS(N2)    &kp LS(N3)    &kp LS(N4)    &kp LS(N5)                     &kp LS(N6)    &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp LBKT
-//  /                                        ;             +                      -             `             [             ]             ^
-&kp SLASH        &trans        &trans        &kp SEMI      &kp LS(SEMI)                   &kp MINUS     &kp LS(LBKT)  &kp RBKT      &kp BSLH      &kp EQUAL
-//               \             ~             :             *                                    ¥             {             }             _
-&trans           &kp INT1      &kp LS(EQUAL) &kp SQT       &kp LS(SQT)                    &trans        &kp INT3      &kp LS(RBKT)  &kp LS(BSLH)  &kp LS(INT1)
-//                                                                                 DEL                         =             |             ?
-&trans           &trans        &trans        &trans        &trans        &bootloader      &kp DELETE    &trans                      &kp LS(MINUS) &kp LS(INT3)  &kp QUESTION
+&kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)  &kp LS(N5)                               &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)    &kp LBKT
+&kp SLASH   &trans      &trans         &kp SEMI    &kp LS(SEMI)                             &kp MINUS   &kp LS(LBKT)  &kp RBKT       &kp BSLH      &kp EQUAL
+&trans      &kp INT1    &kp LS(EQUAL)  &kp SQT     &kp LS(SQT)                              &trans      &kp INT3      &kp LS(RBKT)   &kp LS(BSLH)  &kp LS(INT1)
+&trans      &trans      &trans         &trans      &trans        &bootloader    &kp DELETE  &trans                    &kp LS(MINUS)  &kp LS(INT3)  &kp QUESTION
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -161,12 +179,10 @@
 
         NUMBER {
             bindings = <
-//                                                           +             7             8             9             -
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp LS(SEMI)  &kp N7        &kp N8        &kp N9        &kp MINUS
-//                                                           *             4             5             6             /
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10                        &kp LS(SQT)   &kp N4        &kp N5        &kp N6        &kp SLASH
-&kp F11  &kp F12  &trans  &trans  &trans                         &trans        &kp N1        &kp N2        &kp N3        &kp ENTER
-&trans   &trans   &trans  &trans  &trans   &trans    &kp DOT     &kp N0                      &trans        &trans        &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                      &kp LS(SEMI)  &kp N7  &kp N8  &kp N9  &kp MINUS
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10                     &kp LS(SQT)   &kp N4  &kp N5  &kp N6  &kp SLASH
+&kp F11  &kp F12  &trans  &trans  &trans                      &trans        &kp N1  &kp N2  &kp N3  &kp ENTER
+&trans   &trans   &trans  &trans  &trans   &trans    &kp DOT  &kp N0                &trans  &trans  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -185,10 +201,10 @@
 
         SETTING {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
-&trans        &trans        &trans        &trans        &trans                               &trans        &trans        &trans          &trans        &trans
-&trans        &trans        &trans        &trans        &trans                               &trans        &trans        &trans          &trans        &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &trans                      &studio_unlock  &trans        &bt BT_CLR_ALL
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                              &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
+&trans        &trans        &trans        &trans        &trans                                    &trans          &trans        &trans          &trans        &trans
+&trans        &trans        &trans        &trans        &trans                                    &trans          &trans        &trans          &trans        &bt BT_CLR
+&trans        &trans        &trans        &trans        &trans        &bootloader    &bootloader  &studio_unlock                &studio_unlock  &trans        &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
