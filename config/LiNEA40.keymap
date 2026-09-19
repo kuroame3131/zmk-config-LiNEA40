@@ -70,9 +70,9 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,
+            //スクロール方向を逆転,,,,
             <&zip_xy_scaler 1 16>,
-            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,,,
+            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -80,11 +80,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        ZenkakuHankaku {
-            bindings = <&kp GRAVE>;
-            key-positions = <1 2>;
-        };
 
         InsertKey {
             bindings = <&kp INS>;
@@ -125,6 +120,11 @@
             bindings = <&kp LANG1>;
             key-positions = <17 16>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
     };
 
     behaviors {
@@ -162,16 +162,16 @@
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &mkp MB1
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans  &none   &trans  &trans    &trans  &trans          &trans  &trans  &trans
             >;
         };
 
         SYMBOL {
             bindings = <
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)  &kp LS(N5)                               &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)    &kp LBKT
-&kp SLASH   &kp INT1    &kp LS(EQUAL)  &kp SEMI    &kp LS(SEMI)                             &kp MINUS   &kp LS(LBKT)  &kp RBKT       &kp BSLH      &kp EQUAL
-&trans      &trans      &trans         &kp SQT     &kp LS(SQT)                              &trans      &kp INT3      &kp LS(RBKT)   &kp LS(BSLH)  &kp LS(INT1)
-&trans      &trans      &trans         &trans      &trans        &bootloader    &kp DELETE  &trans                    &kp LS(MINUS)  &kp LS(INT3)  &kp QUESTION
+&kp LS(N1)  &kp LS(N2)  &kp LS(N3)         &kp LS(N4)   &kp LS(N5)                           &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)    &kp LBKT
+&kp SLASH   &kp INT1    &kp SEMI           &kp SQT      &kp LS(EQUAL)                        &kp MINUS   &kp LS(LBKT)  &kp RBKT       &kp BSLH      &kp EQUAL
+&trans      &trans      &kp LS(SEMICOLON)  &kp LS(SQT)  &trans                               &trans      &kp INT3      &kp LS(RBKT)   &kp LS(BSLH)  &kp LS(INT1)
+&trans      &trans      &trans             &none        &trans         &trans    &kp DELETE  &trans                    &kp LS(MINUS)  &kp LS(INT3)  &kp QUESTION
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -179,10 +179,10 @@
 
         NUMBER {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                      &kp LS(SEMI)  &kp N7  &kp N8  &kp N9  &kp MINUS
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10                     &kp LS(SQT)   &kp N4  &kp N5  &kp N6  &kp SLASH
-&kp F11  &kp F12  &trans  &trans  &trans                      &trans        &kp N1  &kp N2  &kp N3  &kp ENTER
-&trans   &trans   &trans  &trans  &trans   &trans    &kp DOT  &kp N0                &trans  &trans  &trans
+&kp F1   &kp F2   &kp F3       &kp F4  &kp F5                      &kp LS(SEMI)  &kp N7  &kp N8  &kp N9  &kp MINUS
+&kp F6   &kp F7   &kp F8       &kp F9  &kp F10                     &kp LS(SQT)   &kp N4  &kp N5  &kp N6  &kp SLASH
+&kp F11  &kp F12  &trans       &trans  &trans                      &trans        &kp N1  &kp N2  &kp N3  &kp ENTER
+&trans   &trans   &bootloader  &none   &trans   &trans    &kp DOT  &kp N0                &trans  &trans  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -193,7 +193,7 @@
 &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE       &kp C_VOLUME_DOWN    &kp C_VOLUME_UP                    &kp LG(TAB)  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &kp LG(D)
 &trans        &trans        &kp LS(LG(S))    &kp LA(PRINTSCREEN)  &kp PRINTSCREEN                    &kp HOME     &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
 &trans        &trans        &kp LC(LA(DEL))  &kp LC(LS(ESCAPE))   &kp LC(LA(INS))                    &kp PAGE_UP  &mkp MB4                &mkp MB3        &mkp MB5                 &kp PAGE_DOWN
-&trans        &trans        &trans           &trans               &trans           &trans    &trans  &trans                               &trans          &kp C_BRI_DN             &kp C_BRI_UP
+&trans        &trans        &trans           &none                &trans           &trans    &trans  &trans                               &trans          &kp C_BRI_DN             &kp C_BRI_UP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -201,10 +201,10 @@
 
         SETTING {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                              &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
-&trans        &trans        &trans        &trans        &trans                                    &trans          &trans        &trans          &trans        &trans
-&trans        &trans        &trans        &trans        &trans                                    &trans          &trans        &trans          &trans        &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &bootloader    &bootloader  &studio_unlock                &studio_unlock  &trans        &bt BT_CLR_ALL
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                              &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans        &trans        &trans        &trans        &trans                                    &trans          &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans                                    &trans          &trans        &trans        &trans        &bt BT_CLR
+&trans        &trans        &trans        &none         &trans        &bootloader    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
@@ -215,7 +215,7 @@
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans  &none   &trans  &trans    &trans  &trans          &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
