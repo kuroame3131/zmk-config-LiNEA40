@@ -104,13 +104,13 @@ layers:
   - '`'
   - '['
   - ']'
-  - ^
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '='
+  - '?'
+  - '|'
   - +
   - '*'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ^
   - ¥
   - '{'
   - '}'
@@ -195,9 +195,9 @@ layers:
   - タスクマネージャ
   - Ctl+Alt+Ins
   - PgUp
-  - 戻る
-  - 中click
-  - 進む
+  - Gui+←
+  - Gui+↑
+  - Gui+→
   - PgDn
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -207,9 +207,9 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
+  - Gui+↓
   - {t: ▽, type: trans}
-  - 輝度-
-  - 輝度+
+  - {t: ▽, type: trans}
   Setting:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -297,19 +297,26 @@ layers:
 combos:
 - p: [7, 8]
   k: INS
+  l: [Base]
 - p: [19, 17]
   k: 中click
 - p: [18, 19]
   k: 右click
 - p: [17, 18]
   k: Scroll
+  l: [Base]
 - p: [26, 27]
   k: 戻る
+  l: [Base]
 - p: [28, 27]
   k: 進む
+  l: [Base]
 - p: [12, 13]
   k: 英数
+  l: [Base]
 - p: [17, 16]
   k: かな
+  l: [Base]
 - p: [0, 1]
   k: ESC
+  l: [Base]
