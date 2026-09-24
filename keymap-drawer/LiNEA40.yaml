@@ -209,7 +209,7 @@ layers:
   - {t: ▽, type: trans}
   - Gui+↓
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - AltGr+TAB
   Setting:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
