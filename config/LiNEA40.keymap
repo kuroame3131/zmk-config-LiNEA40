@@ -70,9 +70,9 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,
             <&zip_xy_scaler 1 16>,
-            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,,,,,,,,
+            //ボール移動量を1/16に減速（数字を大きくするほど遅い）,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -136,6 +136,12 @@
         rctl {
             bindings = <&kp RCTRL>;
             key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 10>;
             layers = <0>;
         };
     };
