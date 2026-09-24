@@ -323,3 +323,6 @@ combos:
 - p: [28, 29]
   k: Ctrl
   l: [Base]
+- p: [11, 10]
+  k: TAB
+  l: [Base]
