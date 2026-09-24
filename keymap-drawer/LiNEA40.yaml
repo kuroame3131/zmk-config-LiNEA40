@@ -179,7 +179,7 @@ layers:
   - ↑
   - 仮想Desk→
   - デスクトップ
-  - {t: ▽, type: trans}
+  - Alt+TAB
   - {t: ▽, type: trans}
   - 範囲SS
   - 窓SS
