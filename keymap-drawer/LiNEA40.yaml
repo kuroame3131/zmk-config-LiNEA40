@@ -180,7 +180,7 @@ layers:
   - 仮想Desk→
   - デスクトップ
   - Alt+TAB
-  - {t: ▽, type: trans}
+  - Sft+Alt+TAB
   - 範囲SS
   - 窓SS
   - PrtSc
@@ -189,8 +189,8 @@ layers:
   - ↓
   - →
   - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+TAB
+  - Sft+Ctl+TAB
   - Ctl+Alt+Del
   - タスクマネージャ
   - Ctl+Alt+Ins
