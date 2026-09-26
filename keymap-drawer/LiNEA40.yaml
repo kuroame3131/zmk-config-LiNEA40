@@ -35,8 +35,8 @@ layers:
   - Win
   - {t: 英数, h: Alt}
   - ''
-  - {t: SPACE, h: Symbol}
-  - {t: TAB, h: Number}
+  - {t: SPACE, h: Number}
+  - {t: TAB, h: Ctrl}
   - {t: BS, h: Action}
   - {t: ENTER, h: Symbol}
   - {t: かな, h: Setting}
@@ -100,16 +100,16 @@ layers:
   - ;
   - ':'
   - '~'
-  - '-'
+  - '|'
   - '`'
   - '['
   - ']'
   - '='
   - '?'
-  - '|'
+  - '-'
   - +
   - '*'
-  - {t: ▽, type: trans}
+  - '='
   - ^
   - ¥
   - '{'
@@ -119,10 +119,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Del
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -161,8 +161,8 @@ layers:
   - {t: ▽, type: trans}
   - BOOT
   - ''
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - .
   - '0'
   - {t: ▽, type: trans}
@@ -188,17 +188,17 @@ layers:
   - ←
   - ↓
   - →
-  - END
+  - Shift
   - Ctl+TAB
   - Sft+Ctl+TAB
   - Ctl+Alt+Del
   - タスクマネージャ
   - Ctl+Alt+Ins
-  - PgUp
+  - END
   - Gui+←
   - Gui+↑
   - Gui+→
-  - PgDn
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,8 +208,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - Gui+↓
-  - {t: ▽, type: trans}
-  - AltGr+TAB
+  - PgUp
+  - PgDn
   Setting:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
